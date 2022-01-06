@@ -1,0 +1,18 @@
+{
+  "name": "ts-compile-things",
+  "version": "1.0.0",
+  "description": "typescript can transpile native node esm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jungai/ts-compile-things.git"
+  },
+  "author": "jungai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jungai/ts-compile-things/issues"
+  },
+  "homepage": "https://github.com/jungai/ts-compile-things#readme",
+  "devDependencies": {
+    "typescript": "^4.6.0-dev.20220106"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "native",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node ."
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "exp",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build:types": "tsc -p tsconfig.json",
+    "build:js": "babel src --out-dir dist --extensions .ts --source-maps inline",
+    "build": "pnpm build:types && pnpm build:js",
+    "build:native": "tsc -p tsconfig.json",
+    "test": "node ."
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7"
+  }
+}

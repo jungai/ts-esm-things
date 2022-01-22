@@ -1,4 +1,4 @@
-import { printNo1 } from "./utils.js";
+import { printNo1 } from "./utils";
 
 (() => {
   printNo1();

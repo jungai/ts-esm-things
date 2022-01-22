@@ -4,14 +4,16 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
+    "fix:esm": "tsc-esm-fix --tsconfig ./tsconfig.json --ext='.js'",
     "build:types": "tsc -p tsconfig.json",
     "build:js": "babel src --out-dir dist --extensions .ts --source-maps inline",
-    "build": "pnpm build:types && pnpm build:js",
-    "build:native": "tsc -p tsconfig.json",
+    "build:custom": "pnpm build:types && pnpm build:js",
+    "build": "tsc -p tsconfig.json && pnpm fix:esm",
     "test": "node ."
   },
   "devDependencies": {
     "@babel/cli": "^7.16.7",
-    "@babel/core": "^7.16.7"
+    "@babel/core": "^7.16.7",
+    "tsc-esm-fix": "^2.7.6"
   }
 }
